@@ -1,1 +1,129 @@
+    :root {
+    --first: #2b2a4c;
+    --second: #b31312;
+    --third: #ea906c;
+    --fourth: #ffffff;
+    --bg-color: #eee2de;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        color: var(--first);
+    }
 
+    body {
+        background: var(--first);
+        color: var(--bg-color)
+    }
+
+/* a, p, h1, h2, h3, h4 START */
+
+    a {
+        text-decoration: none;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+/* p, h1, h2, h3, h4 END */
+
+/* Nav START */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background-color: var(--fourth)
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding-left: 2rem;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+/* Nav END */
+
+/* Main START */
+
+    iframe {
+        position: fixed;
+        width: 80%;
+        height: 75dvh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: none; */
+    }
+
+/* first-iframe.html START */
+    .wrapper {
+        margin: 30px;
+    }
+
+    .start {
+        display: flex;
+        gap: 50px;;
+    }
+    .info-side {
+        flex: 1;
+    }
+
+    h1 {
+        margin: 50px 0 30px 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        margin: 30px 0 10px 0;
+    }
+
+    .start-btn {
+        display: flex;
+        background-color: var(--third);
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s;
+    }
+
+    .start-btn a:hover {
+        color: var(--fourth);
+    }
+
+    .start-btn:hover {
+        background-color: var(--second);
+    }
+
+
+
+
+
+/* first-iframe.html END */
+
+/* Main END */
+
+/* Footer START */
+    footer {
+        position: fixed;
+        width: 100%;
+        padding: 1rem 2rem;
+        text-align: center;
+        background-color: var(--fourth);
+        bottom: 0;
+    }
+/* Footer END */
