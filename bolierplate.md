@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/media.css" />
+    <link rel="stylesheet" href="/css/level.css" />
 		<title>Level Game</title>
 	</head>
   <body>
