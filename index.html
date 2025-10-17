@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/media.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+
 		<title>Level Game</title>
 	</head>
   <body>
@@ -22,15 +23,15 @@
             <li><a href="#">Donate</a></li>
           </ul>
         </nav>
+
     </header>
-<!-- Header with nav END -->
-    
-<!-- Main with iFrame START -->
-    <main>
-      <iframe src="first-iframe.html" title="landingpage">
-      </iframe>  
+    <!-- Header with nav END -->
+                <h1 id="level-title">Level 001</h1>
+    <!-- Main START -->
+    <main id="game-area">
+        <!-- Level content will be injected here -->
     </main>
-<!-- Main with iFrame END -->
+<!-- Main END -->
 
 <!-- Footer END -->
     <footer>
@@ -38,7 +39,7 @@
     </footer>
 <!-- Footer END -->
 
- <script src="./js/script.js" charset="UTF-8"></script>
-    
+ <script src="/js/game.js" charset="UTF-8"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
   </body>
 </html>
