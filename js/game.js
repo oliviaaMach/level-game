@@ -94,4 +94,4 @@ function handleClick(button) {
   msg.style.color = "red";
 
   gameArea.appendChild(msg);
-} }
+} };
