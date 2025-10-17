@@ -1,7 +1,6 @@
 //  Automatic update the year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-
 const levels = [
     {
         title: "Level 001",
@@ -24,9 +23,9 @@ const levels = [
   title: "Level 003",
   text: 'That was not to hard. Let\'s make it more interesting. <br> Click the <a href="#" class="next-link">button</a> to continue.',
   buttons: [
-    { text: "Left", correct: false },
-    { text: "Middle", correct: false },
-    { text: "Right", correct: false }
+    { text: "Button 1", correct: false },
+    { text: "Button 2", correct: false },
+    { text: "Button 3", correct: false }
   ]
 }
 
@@ -41,8 +40,8 @@ const gameArea = document.getElementById("game-area");
 // Ladda första nivån när sidan startar
 loadLevel(currentLevel);
 
-function loadLevel(index) {
-  const level = levels[index];
+function loadLevel(game) {
+  const level = levels[game];
   title.textContent = level.title;
 
   // Skapa text och knappar
@@ -77,7 +76,7 @@ function handleClick(button) {
     if (currentLevel < levels.length) {
       loadLevel(currentLevel);
     } else {
-      gameArea.innerHTML = `<p>🎉 You finished all levels!</p>`;
+      gameArea.innerHTML = `<p>You finished all levels at the moment! <br> More levels are under construction!</p>`;
       title.textContent = "The End";
     }
  } else {

@@ -4,23 +4,46 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <link rel="stylesheet" href="css/level.css" />
+        <link rel="stylesheet" href="css/media.css" />
+        <link rel="stylesheet" href="css/level.css" />
+
 		<title>Level Game</title>
 	</head>
+
   <body>
+    <div class="wrapper">
+  <header>
+        <nav>
+          <h3>
+            <a href="index.html">Level game</a>
+          </h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </nav>
 
-    <header>
-        <h1 id="level-title">Level 001</h1>"
     </header>
-    
+    <!-- Header with nav END -->
+
+                <h1 id="level-title">Level 001</h1>
+
+    <!-- Main START -->
     <main id="game-area">
-      <p>We will start out simple:  <br/> Press the button. </p>
-        <div id="lvl-btn" id="lvlOne-btn">Button</div>
+        <!-- Level content will be injected here -->
     </main>
+<!-- Main END -->
+ 
 
+<!-- Footer END -->
+    <footer>
+      Copyright &copy; <span id="year"> </span> Machs
+    </footer>
+<!-- Footer END -->
 
- <script src="./js/script.js" charset="UTF-8"></script>
-    
+ <script src="js/game.js" charset="UTF-8"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
   </body>
 </html>
