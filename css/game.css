@@ -1,0 +1,18 @@
+ .lvl-btn:hover {
+        background-color: var(--second);
+    }
+
+.guess-btn {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    margin-top: 5%;
+}
+
+.next-link:hover {
+    color: var(--first); 
+}
+
+#wrong-msg {
+    margin-top: 10px;
+}
