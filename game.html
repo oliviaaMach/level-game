@@ -11,20 +11,35 @@
 	</head>
 
   <body>
-    <div class="wrapper">
-  <header>
-        <nav>
-          <h3>
-            <a href="index.html">Level game</a>
-          </h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Donate</a></li>
-          </ul>
-        </nav>
+<!-- Header with nav START -->
+    <header>
 
+        <nav class="fixed-nav">
+    <!--            hide this block on larger screen-->
+                <nav class="navbar">
+                  <h3>Level game</h3>
+                    <button id="menuToggle" class="hamburger" aria-label="Meny">
+                        <img src="./assets/imgs/hamburger-menu.svg">
+                    </button>
+                    <ul class="menu">
+                      <li><a href="index.html" class="nav-links">Home</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">Donate</a></li>
+                    </ul>
+                </nav>
+
+    <!--            hide this bit on smaller screen-->
+                <nav class="desktop-navbar">
+                    <h3>Level game</h3>
+                  <ul class="menu">
+                    <li><a href="index.html" class="nav-links">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+              </nav>
+            </nav>
     </header>
     <!-- Header with nav END -->
 
@@ -43,7 +58,8 @@
     </footer>
 <!-- Footer END -->
 
- <script src="js/game.js" charset="UTF-8"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+  <script src="js/game.js" charset="UTF-8"></script>
+  <script src="js/script.js" charset="UTF-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
   </body>
 </html>

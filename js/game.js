@@ -1,32 +1,29 @@
-//  Automatic update the year
-document.getElementById('year').textContent = new Date().getFullYear();
-
 const levels = [
-    {
-        title: "Level 001",
-        text: "We will start out simple: <br> Press the button!",
-        buttons: [
-            { text: "Button", correct: true }
-        ]
+{
+    title: "Level 001",
+    text: "We will start out simple: <br> Press the button!",
+    buttons: [
+        { text: "Button", correct: true }
+    ]
 },
 
-    {
-        title: "Level 002",
-        text: "Good job, you clicked on the button <br> Let's do it again. Click on the right button!",
-        buttons: [
-            { text: "I'm the button!", correct: false },
-            { text:"No, I'm right!", correct: true }
-        ]
-    },
+{
+    title: "Level 002",
+    text: "Good job, you clicked on the button <br> Let's do it again. Click on the right button!",
+    buttons: [
+        { text: "I'm the button!", correct: false },
+        { text:"No, I'm right!", correct: true }
+    ]
+},
 
-    {
-  title: "Level 003",
-  text: 'That was not to hard. Let\'s make it more interesting. <br> Click the <a href="#" class="next-link">button</a> to continue.',
-  buttons: [
-    { text: "Button 1", correct: false },
-    { text: "Button 2", correct: false },
-    { text: "Button 3", correct: false }
-  ]
+{
+    title: "Level 003",
+    text: 'That was not to hard. Let\'s make it more interesting. <br> Click the <a href="#" class="next-link">button</a> to continue.',
+    buttons: [
+      { text: "Button 1", correct: false },
+      { text: "Button 2", correct: false },
+      { text: "Button 3", correct: false }
+    ]
 }
 
 ];
@@ -90,7 +87,7 @@ function handleClick(button) {
   const msg = document.createElement("p");
   msg.id = "wrong-msg"; // ge det ett ID så vi kan hitta det nästa gång
   msg.textContent = "Oops! Try again!";
-  msg.style.color = "red";
+  msg.style.color = "#b31312";
 
   gameArea.appendChild(msg);
 } };

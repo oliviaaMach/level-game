@@ -1,12 +1,122 @@
 @media (max-width: 800px) {
+    p, h2 {
+        padding: 0;
+        margin: 0;
+    }
 
-    header, nav, main {
+
+    header, main, .start-page {
         width: 100%;
-        height: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
 
     .start-page {
         display: block;
+        height: 100dvh;
     }
 
+    .info-side {
+        margin-top: -80%;
+    }
+
+/* media for 600px START */
+
+    @media (min-width: 600px) {
+            .info-side {
+            margin-top: -50%;
+        }
+    }
+/* media for 600px END */
+
+    .game-side {
+        margin: 0 10px;
+    }
+
+    .guess-btn {
+        display: block;
+    }
+
+    .start-btn {
+        margin-top: 5%;
+    }
+
+    .lvl-btn {
+        margin-top: 10px;
+    }
+
+/* Nav-bar START */
+
+        .fixed-nav{
+            width: 100%;
+        }    
+        
+        .menu {
+            display: none;
+            flex-direction: column;
+            background-color: var(--fourth);
+            width: 100%;
+            height: 100%;
+            right: 0;
+            position: absolute;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .menu a {
+            color: var(--first);
+            text-decoration: none;
+            padding: 8px 0;
+            display: block;
+            transition: color 0.5s;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .navbar a {
+            font-size: 1.5em;
+        }
+
+        a:hover {
+        color: var(--third);
+        }
+
+        #menuToggle {
+            position: absolute;
+            right: 0; 
+            margin-right: 10px;
+            padding-top: 10px ;
+            font-size: 2rem;
+            cursor: pointer;
+            display: block;
+            color: var(--tertiary);
+            background-color: #fff;
+            border: none;
+        }
+
+        #menuToggle:hover {
+            color: var(--bg-color);
+        }
+
+    /* Open the menubar with .open START */
+
+        .menu.open {
+            display: flex;
+            position: fixed;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            width: 100vw;
+            height: 100dvh;
+            top: 5%;
+            z-index: 10px;
+        } 
+    /* Open the menubar with .open END */
+    
+    /* Nav-bar END */
+
 }
+
