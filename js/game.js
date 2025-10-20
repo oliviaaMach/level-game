@@ -24,6 +24,21 @@ const levels = [
       { text: "Button 2", correct: false },
       { text: "Button 3", correct: false }
     ]
+},
+
+{
+    title: "Level 004",
+    text: 'Was Level 3 tricky? No? <br> Okay, let\'s make it more interesting. Can you find the button?',
+    buttons: [
+      { text: "You found me!", correct: true }
+    ],
+    draggable: true,
+    items: [
+      { id: "box1", text:"Box 1" },
+      { id: "box2", text:"Box 2" },
+      { id: "box3", text:"Box 3" },
+      { id: "box4", text:"Box 4" },
+    ]
 }
 
 ];
@@ -64,6 +79,8 @@ function loadLevel(game) {
     });
   }
 }
+
+
 
 function handleClick(button) {
   const correct = button.getAttribute("data-correct") === "true";
