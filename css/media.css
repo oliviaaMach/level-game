@@ -5,37 +5,36 @@
     }
 
 
-    header, main, .start-page {
+    header, main, .start-page, #game-area {
         width: 100%;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
     }
 
-    .start-page {
-        display: block;
+    #game-area {
         height: 100dvh;
     }
 
+    #game-area p {
+        padding: 10%;
+    }
+
+    .start-page {
+        display: block;
+        height: 75dvh;
+    }
+
     .info-side {
-        margin-top: -80%;
+        margin-top: -20%;
     }
-
-/* media for 600px START */
-
-    @media (min-width: 600px) {
-            .info-side {
-            margin-top: -60%;
-        }
-    }
-/* media for 600px END */
 
     .game-side {
         margin: 0 10px;
     }
 
     .guess-btn {
-        display: block;
+        flex-direction: column;
     }
 
     .start-btn {
@@ -44,6 +43,10 @@
 
     .lvl-btn {
         margin-top: 10px;
+    }
+
+    h1 {
+        margin: 50px;
     }
 
 /* Nav-bar START */
