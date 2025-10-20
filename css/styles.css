@@ -16,13 +16,6 @@
         background: var(--first);
     }
 
-    #game-area {
-        width: 80%;
-        background-color: #e3e3e3;
-        justify-self: center;
-        height: 70dvh;
-    }
-
 /* a, p, h1, h2, h3, h4 START */
 
     a {
