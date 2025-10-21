@@ -12,9 +12,6 @@
         box-sizing: border-box;
     }
 
-    #game-area {
-        height: 100dvh;
-    }
 
     #game-area p {
         padding: 10%;
@@ -22,11 +19,7 @@
 
     .start-page {
         display: block;
-        height: 75dvh;
-    }
-
-    .info-side {
-        margin-top: -20%;
+        /* height: 100dvh; */
     }
 
     .game-side {
@@ -53,8 +46,8 @@
 
         .fixed-nav{
             width: 100%;
-        }    
-        
+        }
+
         .menu {
             display: none;
             flex-direction: column;
@@ -89,7 +82,7 @@
 
         #menuToggle {
             position: absolute;
-            right: 0; 
+            right: 0;
             margin-right: 10px;
             padding-top: 10px ;
             font-size: 2rem;
@@ -116,9 +109,9 @@
             height: 100dvh;
             top: 5%;
             z-index: 10px;
-        } 
+        }
     /* Open the menubar with .open END */
-    
+
     /* Nav-bar END */
 
 }
