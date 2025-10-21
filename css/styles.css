@@ -14,6 +14,8 @@
 
     body {
         background: var(--first);
+        height: 100vh;
+       
     }
 
 /* a, p, h1, h2, h3, h4 START */
@@ -24,7 +26,7 @@
 
     p {
         text-align: center;
-        margin: 5%;
+        /* margin: 5%; */
     }
 
     h1 {
@@ -110,9 +112,11 @@ a:hover {
     .start-page {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-content: center;
+        /* align-content: center;
         overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-x: hidden; */
+        margin-bottom: 10px;
+        height: auto;
     }
 
     .start-page h2 {
@@ -126,10 +130,10 @@ a:hover {
         margin-top: 10%;
     }
 
-    .start-page p {
+    /* .start-page p {
         width: 50%;
         margin-left: 25%;
-    }
+    } */
 
     .start-page::-webkit-scrollbar {
         display: none;
