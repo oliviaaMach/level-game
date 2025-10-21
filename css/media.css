@@ -12,6 +12,10 @@
         box-sizing: border-box;
     }
 
+    #game-area {
+        height: 76dvh;
+    }
+
 
     #game-area p {
         padding: 10%;
@@ -32,7 +36,7 @@
 
     .start-btn {
         margin-top: 5%;
-        margin-bottom: 15%
+        margin-bottom: 20%
     }
 
     .lvl-btn {
