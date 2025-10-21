@@ -102,7 +102,7 @@ a:hover {
         width: 75%;
         background-color: #e3e3e3;
         justify-self: center;
-        height: 63dvh;
+        height: 66dvh;
         padding: 20px;
 
     }
@@ -111,6 +111,8 @@ a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-content: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .start-page h2 {
@@ -120,17 +122,16 @@ a:hover {
         grid-column: span 2;
     }
 
+    .description h2, .game-on h2 {
+        margin-top: 10%;
+    }
+
     .start-page p {
         width: 50%;
         margin-left: 25%;
     }
 
-    .info-side {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    .info-side::-webkit-scrollbar {
+    .start-page::-webkit-scrollbar {
         display: none;
     }
 

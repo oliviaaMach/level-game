@@ -32,6 +32,7 @@
 
     .start-btn {
         margin-top: 5%;
+        margin-bottom: 15%
     }
 
     .lvl-btn {
@@ -56,7 +57,7 @@
             height: 100%;
             right: 0;
             position: absolute;
-            padding: 10px;
+            padding-top: 10px;
             z-index: 100;
         }
 
@@ -107,7 +108,7 @@
             left: 0;
             width: 100vw;
             height: 100dvh;
-            top: 5%;
+            top: 7%;
             z-index: 10px;
         }
     /* Open the menubar with .open END */
@@ -115,4 +116,13 @@
     /* Nav-bar END */
 
 }
+
+/* @media (min-height 500px, max-height: 800px) {
+        #game-area, .start-page {
+        height: 100dvh;
+        padding: 20px;
+        margin-bottom: 10px;
+
+    }
+} */
 
